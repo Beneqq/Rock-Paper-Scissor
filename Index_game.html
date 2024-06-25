@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+</head>
+<body>
+    
+    <h1>Rock - Paper - Scissors</h1>
+
+    <div class="choices">
+        <button onclick="playgame('rock')"><i class="fa-regular fa-hand-back-fist"></i></button>
+        <button onclick="playgame('paper')"><i class="fa-regular fa-hand"></i></button>
+        <button onclick="playgame('scissor')"><i class="fa-regular fa-hand-peace"></i></button>
+    </div>
+
+    <div id="playerdis">PLAYER: </div>
+    <div id="computerdis">COMPUTER: </div>
+    <div id="resultdis"></div>
+
+
+
+    <script src="index_game.js"></script>
+</body>
+
+
+<style>
+    body{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1{
+    font-size: 3.5rem;
+    color: blue;
+}
+.choices{
+    margin-bottom: 30px;
+}
+.choices button{
+    font: 20px;
+    padding: 20px;
+    min-width: 160px;
+    margin: 10px;
+    border-radius: 5px;
+    background-color: blue;
+    cursor: pointer;
+}
+.choices button:hover{
+    background-color: rgb(0, 162, 255);
+}
+
+i{
+    color: whitesmoke;
+}
+
+#playerdis, #computerdis{
+    font-size: 2.5rem;
+}
+
+#resultdis{
+    font-size: 5rem;
+    margin: 30px 0;
+}
+
+.greentxt{
+    color: rgb(5, 226, 5);
+}
+.redtxt{
+    color: red;
+}
+</style>
+</html>
